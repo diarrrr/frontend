@@ -16,7 +16,7 @@ export default function CardProduct({item, onAddToCart}) {
       <Card.Body>
         <Card.Title>{ item.name }</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{ item.category.name }</Card.Subtitle>
-        <Tag items={item.tags} onClick={tag => dispatch(toggleTags(tag))} />
+        {/* <Tag items={item.tags} onClick={tag => dispatch(toggleTags(tag))} /> */}
         <br />
         <Card.Text>
           { formatRupiah(item.price) }

@@ -29,7 +29,7 @@ export default function Home() {
     <div>
       <Container className="mt-5 p-5">
         <BreadCrumb items={breadcrumb}/>
-        <strong>Tags: </strong> <Tag items={tags} onClick={tag => dispatch(toggleTags(tag))}/>
+        {/* <strong>Tags: </strong> <Tag items={tags} onClick={tag => dispatch(toggleTags(tag))}/> */}
         <Row xs={1} lg={4} md={2} className="g-4 mt-1 mb-5">
           { 
             products.status === 'process' ? 
