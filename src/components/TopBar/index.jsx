@@ -24,7 +24,7 @@ export default function TopBar() {
     <Navbar bg="primary" variant="dark" expand="lg" fixed="top">
       <Container>
         <IndexLinkContainer to="/" exact>
-          <Navbar.Brand>POS</Navbar.Brand>
+          <Navbar.Brand>HOME</Navbar.Brand>
         </IndexLinkContainer>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
@@ -61,6 +61,11 @@ export default function TopBar() {
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to={auth.user ? '/account' : '/login'}>
+              <Nav.Link title="Profil">
+                <FontAwesomeIcon icon={solid('user')} />
+              </Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/register">
               <Nav.Link title="Profil">
                 <FontAwesomeIcon icon={solid('user')} />
               </Nav.Link>

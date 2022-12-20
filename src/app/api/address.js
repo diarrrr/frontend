@@ -12,7 +12,7 @@ export const getAddress = async () => {
 }
 
 export const getLocation = async (lokasi, kodeInduk) => {
-  return await axios.get(`https://regions-indoneisa.herokuapp.com/api/${lokasi}?kode_induk=${kodeInduk}`);
+  return await axios.get(`https://api.iluzi.id/region/${lokasi}?id=${kodeInduk}`);
 }
 
 export const createAddress = async data => {
